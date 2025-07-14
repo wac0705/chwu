@@ -2,10 +2,10 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>資料上傳表單</title>
+    <title>詢報價系統</title>
 </head>
 <body>
-    <h1>填寫資料並上傳檔案</h1>
+    <h1>填寫詢價資料</h1>
     <form action="https://chwu.zeabur.app/webhook-test/chwu" method="POST" enctype="multipart/form-data">
         <label for="name">姓名：</label>
         <input type="text" id="name" name="name" required><br><br>
@@ -13,10 +13,16 @@
         <label for="email">Email：</label>
         <input type="email" id="email" name="email" required><br><br>
         
-        <label for="file">上傳檔案：</label>
+        <label for="product">產品描述：</label>
+        <textarea id="product" name="product" required></textarea><br><br>
+        
+        <label for="quantity">數量：</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <label for="file">上傳規格檔案：</label>
         <input type="file" id="file" name="file"><br><br>
         
-        <button type="submit">提交</button>
+        <button type="submit">提交詢價</button>
     </form>
 </body>
 </html>
