@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>資料上傳表單</title>
+</head>
+<body>
+    <h1>填寫資料並上傳檔案</h1>
+    <form action="https://chwu.zeabur.app/webhook-test/chwu" method="POST" enctype="multipart/form-data">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email：</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="file">上傳檔案：</label>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
